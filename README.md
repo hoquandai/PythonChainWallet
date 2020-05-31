@@ -21,3 +21,7 @@ $ python manage.py runserver
 8. Run NodeJS server
 
 9. **Done!**
+
+*** CHÚ Ý
+ - Source code tham khảo từ https://github.com/kemoszn/PyChain
+ - Do không đủ thơì gian gia công nên còn dùng code Python, sẽ chuyển sang Code Ruby on Rails trong lần nộp tới ở bài tập nhóm
