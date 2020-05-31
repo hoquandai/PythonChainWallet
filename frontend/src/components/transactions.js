@@ -27,7 +27,7 @@ class Transactions extends Component {
   <tr>
       <th>From</th>
       <th>To</th>
-      <th>Amount (Sudo)</th>
+      <th>Amount</th>
       <th>Timestamp</th>
     </tr>
   </thead>
