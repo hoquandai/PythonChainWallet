@@ -21,28 +21,28 @@ class Transactions extends Component {
     return (
       <Container>
       <h3><b> Transactions </b></h3>
-      <p>(Sync to get the latest transactions in the blockchain)</p>
+      <p>(Refresh to get the latest transactions)</p>
       <Table responsive>
-  <thead>
-  <tr>
-      <th>From</th>
-      <th>To</th>
-      <th>Amount</th>
-      <th>Timestamp</th>
-    </tr>
-  </thead>
-  <tbody>
-  { this.state.transactions.slice(0).reverse().map(transaction =>
-    transaction.transactions.map( t =>
-    <tr key={t}>
-      <td><b style={{color: '#007bff'}}>0x{t.sender}</b></td>
-      <td><b style={{color: '#007bff'}}>0x{t.receiver}</b></td>
-      <td><b style={{color: '#007bff'}}>{parseFloat(t.amount).toFixed(5)} </b></td>
-      <td><b style={{color: '#007bff'}}>{t.time}</b></td>
-    </tr>
-  ))}
-    </tbody>
-    </Table>
+        <thead>
+        <tr>
+            <th>From</th>
+            <th>To</th>
+            <th>Amount</th>
+            <th>Timestamp</th>
+          </tr>
+        </thead>
+        <tbody>
+        { this.state.transactions.slice(0).reverse().map(transaction =>
+          transaction.transactions.map( t =>
+          <tr key={t}>
+            <td><b style={{color: '#007bff'}}>0x{t.sender}</b></td>
+            <td><b style={{color: '#007bff'}}>0x{t.receiver}</b></td>
+            <td><b style={{color: '#007bff'}}>{parseFloat(t.amount).toFixed(5)} </b></td>
+            <td><b style={{color: '#007bff'}}>{t.time}</b></td>
+          </tr>
+        ))}
+          </tbody>
+          </Table>
       </Container>
     );
   }

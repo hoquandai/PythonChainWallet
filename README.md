@@ -19,5 +19,4 @@ $ python manage.py runserver
 ```
 7. Make sure that everything is working as expected by going to 127.0.0.1:8000/get_chain 
 8. Run NodeJS server
-
-9. **Done!**
+`cd frontend` and follow README.md

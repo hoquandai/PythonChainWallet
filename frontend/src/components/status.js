@@ -28,11 +28,10 @@ class Status extends Component {
     <br/>
     <Row>
     <Col sm="6">
-  <h5> <div><i className="fa fa-cubes"></i></div> No. of Blocks Mined </h5> <hr/>
- <h5 style={{color: '#007bff'}}>#<b>{this.state.length} </b></h5>
+    <h5> <div><i className="fa fa-cubes"></i></div> {this.state.length} blocks mined </h5> <hr/>
     </Col>
     <Col md="6"> <br/>
-    <h5> <div>Node Address (sync <a href=""><i className="fa fa-refresh"></i></a> )</div></h5> <hr/>
+    <h5> <div>Node Address (refresh <a href=""><i className="fa fa-refresh"></i></a> )</div></h5> <hr/>
       <h5 style={{color: '#007bff'}}>0x{this.state.address}</h5>
     </Col >
     </Row>

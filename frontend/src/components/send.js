@@ -48,36 +48,36 @@ class Send extends Component {
   render(){
     return (
         <Container>
-  <br/>
-  <h3><b>Wallet Chain</b></h3>
-  <h4><b style={{color: '#007bff'}}>Send dummy crypto to anyone.</b> </h4>
-        <Form onSubmit={this.handleSubmit}>
-        <Form.Group as={Row}>
-         <Form.Label column sm="2">
-           Recipient
-         </Form.Label>
-         <Col sm="8">
-           <Form.Control onChange={this.handleRecipient} value={this.state.recipient} placeholder="Enter Recipient Address" />
-         </Col>
-       </Form.Group>
-       <Form.Group as={Row}>
-        <Form.Label column sm="2">
-          Amount
-        </Form.Label>
-        <Col sm="2">
-          <Form.Control onChange={this.handleAmount} placeholder="Amount" value={this.state.amount} />
-        </Col>
-        <Col sm="0.5"></Col>
-      </Form.Group>
-      <Form.Group as={Row}>
-      <Col sm="5">
-      <Button variant="primary" type="submit">
-    Send
-  </Button>
-  </Col>
-  </Form.Group>
-     </Form>
-     <br/><br/>
+          <br/>
+          <h3><b>Block Chain</b></h3>
+          <h4><b style={{color: '#007bff'}}>Send crypto to anyone.</b> </h4>
+                <Form onSubmit={this.handleSubmit}>
+                <Form.Group as={Row}>
+                 <Form.Label column sm="2">
+                   Recipient
+                 </Form.Label>
+                 <Col sm="8">
+                   <Form.Control onChange={this.handleRecipient} value={this.state.recipient} placeholder="Enter Recipient Address" />
+                 </Col>
+               </Form.Group>
+               <Form.Group as={Row}>
+                <Form.Label column sm="2">
+                  Amount
+                </Form.Label>
+                <Col sm="2">
+                  <Form.Control onChange={this.handleAmount} placeholder="Amount" value={this.state.amount} />
+                </Col>
+                <Col sm="0.5"></Col>
+              </Form.Group>
+              <Form.Group as={Row}>
+              <Col sm="5">
+              <Button variant="primary" type="submit">
+            Send
+          </Button>
+          </Col>
+          </Form.Group>
+             </Form>
+             <br/><br/>
       </Container>
     );
   }
