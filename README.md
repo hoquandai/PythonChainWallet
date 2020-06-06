@@ -20,3 +20,10 @@ $ python manage.py runserver
 7. Make sure that everything is working as expected by going to 127.0.0.1:8000/get_chain 
 8. Run NodeJS server
 `cd frontend` and follow README.md
+
+9. **Done!**
+
+*** More information
+ - Reference project https://github.com/kemoszn/PyChain
+ - Reference document:
+    - https://medium.com/@MKGOfficial/build-a-simple-blockchain-cryptocurrency-with-python-django-web-framework-reactjs-f1aebd50b6c
